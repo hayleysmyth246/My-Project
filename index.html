@@ -1,8 +1,76 @@
-<html
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<title> My Project </title>
+<title>Will You Win the Lotto?</title>
+<script language="JavaScript" type="text/javascript">
+
+function Lottery() {
+this.balls = new Array();
+this.freshSet = freshSet;
+this.selectOneNumber = selectOneNumber;
+}
+
+function freshSet(maxNumber) {
+maxNumber=parseInt(maxNumber);
+if( isNaN(maxNumber) || maxNumber<0 ) maxNumber=0;
+// create new set of balls numbered from 1 to maxNumber inclusive
+
+for (var k=0; k<maxNumber; k++) this.balls[k] = k+1;
+}
+
+function selectOneNumber() {
+if( this.balls.length<1 ) return -1;
+var i = Math.random()*this.balls.length;
+i = Math.floor(i);
+return this.balls.splice(i,1);
+}
+
+function Lotto()
+{
+
+var newballs = Lottery
+
+
+alert ("The function was called")
+return false;
+
+}
+
+</script>
 </head>
-<body>
-<p> First paragraph </p>
+
+<body bgcolor="#FFFFFF">
+<h2>Will you win the Lottery?</h2>
+
+<form method="get" action="" onsubmit="return Lotto();" name="lotto" id="numbers">
+<table border="0">
+<tr>
+<th align="right">Scratch to win!</th>
+
+<td><img src="https://www.shareicon.net/data/128x128/2016/08/20/817724_star_395x512.png
+"></td>
+<td><img src="https://www.shareicon.net/data/128x128/2016/08/20/817724_star_395x512.png
+"></td>
+<td><img src="https://www.shareicon.net/data/128x128/2016/08/20/817724_star_395x512.png
+"></td>
+<td><img src="https://www.shareicon.net/data/128x128/2016/08/20/817724_star_395x512.png
+"></td>
+<td><img src="https://www.shareicon.net/data/128x128/2016/08/20/817724_star_395x512.png
+"></td>
+<td><img src="https://www.shareicon.net/data/128x128/2016/08/20/817724_star_395x512.png
+"></td>
+</tr>
+
+
+
+
+</tr>
+</table>
+</form>
 </body>
 </html>
+
+</code>
