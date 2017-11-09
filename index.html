@@ -2,68 +2,39 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<title>Will You Win the Lotto?</title>
-<script language="JavaScript" type="text/javascript">
-
-function Lottery() {
-this.balls = new Array();
-this.freshSet = freshSet;
-this.selectOneNumber = selectOneNumber;
-}
-
-function freshSet(maxNumber) {
-maxNumber=parseInt(maxNumber);
-if( isNaN(maxNumber) || maxNumber<0 ) maxNumber=0;
-// create new set of balls numbered from 1 to maxNumber inclusive
-
-for (var k=0; k<maxNumber; k++) this.balls[k] = k+1;
-}
+<style>
+div{
+  width: 130px;
+  border: 25px color:#ff3399;
+  padding: 0px;
+  margin: 0px;
   
 
-
-function selectOneNumber() {
-if( this.balls.length<1 ) return -1;
-var i = Math.random()*this.balls.length;
-i = Math.floor(i);
-return this.balls.splice(i,1);
+}
+ 
+h1 {
+	font-size: 200%
+}
+h2 {
+    font-size: 500%;
 }
 
-div {
-  width: 300px;
-  border: 25px color:deep pink;
-  padding: 25px;
-  margin: 25px;
-  
-function Lotto()
-{
-
-var newballs = Lottery
-
-
-alert ("The function was called")
-return false;
-
+h3 {
+    font-size: 300%;
 }
 
+</style>
 </script>
 </head>
-
-<body bgcolor="#FFFFFF">
-<h2 style="font-family:Brush Script MT;"><center>Will you win the Lottery?</center></h2>
-
+<body bgcolor="#ff0066">
+<h1 style="font-family:Brush Script MT;"><center>Texas scratch off</center> </h1>
+<h2 style="font-family:Brush Script MT;"><center>$1 Lottery Ticket</center></h2>
 <form method="get" action="" onsubmit="return Lotto();" name="lotto" id="numbers">
 <table border="0">
 <tr>
 <th </th>
   
-<div>
-  
-<td><img src="https://www.shareicon.net/data/128x128/2016/08/20/817724_star_395x512.png
-"></td>
-<td><img src="https://www.shareicon.net/data/128x128/2016/08/20/817724_star_395x512.png
-"></td>
+<div>  
 <td><img src="https://www.shareicon.net/data/128x128/2016/08/20/817724_star_395x512.png
 "></td>
 <td><img src="https://www.shareicon.net/data/128x128/2016/08/20/817724_star_395x512.png
@@ -78,16 +49,11 @@ return false;
 </div>
   
 </tr>
-
 <h3 style="font-family:Brush Script MT;"><center>Scratch to win!</center>
-
-
-
-
+<p>
 </tr>
 </table>
 </form>
 </body>
 </html>
-
 </code>
